@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteudo h1 {
+  margin-top: 70px;
+  font-family: "EB Garamond";
+}
+
+.conteudo {
+  color: #fff;
+  text-shadow: 0 0 20px #ff9d00;
+  font-weight: bold;
+  font-family: "EB Garamond";
+  background: transparent;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  width: 50%;
+  float: left;
+}
+
+.slaudo h1 {
+  margin-top: 70px;
+  font-family: "EB Garamond";
+}
+
+.slaudo {
+  color: #fff;
+  text-shadow: 0 0 20px #ff9d00;
+  font-weight: bold;
+  font-family: "EB Garamond";
+  background: transparent;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  width: 50%;
+  float: left;
+}
+
+body {
+  background-color: #000000;
+}
+
+#menu {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.menu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #f39c12;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f39c12;
+  transition: width 0.3s;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../img/Seal_2.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  background-color: #202020ab;
+  padding-top: 80px;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.image-card:hover {
+  transform: scale(1.02);
+}
+
+.image-card img {
+  width: 28%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-title {
+  font-size: 1.5em;
+  margin: 15px 0 10px 0;
+  color: #ffffff;
+}
+
+.image-subtitle {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.image-subtitle ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.image-subtitle li {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.featured-card {
+  width: 40%;
+  margin: -20px auto;
+  background: #202020ab;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.featured-card:hover {
+  transform: scale(1.02);
+}
+
+.featured-card img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+.featured-content {
+  padding: 20px;
+}
+
+.featured-title {
+  font-size: 1.8em;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+}
+
+.featured-subtitle ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.featured-subtitle li {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+}
+
+.featured-subtitle li:before {
+  content: "•";
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.container-2 {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffffc0;
+  overflow: hidden;
+  margin-top: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f39c12;
+  border-radius: 5px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 10%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: 35vh;
+  margin-top: 8vh;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 450px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.description {
+  color: #000000;
+  line-height: 1.6;
+  font-size: 1rem;
+}
